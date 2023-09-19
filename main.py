@@ -1,4 +1,4 @@
-#Projeto realizado por Vinícius Camargo Leardini
+#Projeto realizado por Vinícius Camargo Leardini, Rubens Alves da Costa Junior, Luiz Guilherme de Almeida
 
 from classAresta import Aresta
 
@@ -65,20 +65,34 @@ def encontrar_arvore_geradora_minima(arestas,x):
         print(f'Aresta {aresta.origem} até Aresta {aresta.destino}, Peso = {aresta.peso}' )
         
 
-
 arestas = [
-Vertice(0, 2, 7),
-Vertice(0, 4, 4),
-Vertice(0, 5, 7),
-Vertice(2, 1, 8),
-Vertice(2, 4, 6),
-Vertice(4, 1, 7),
-Vertice(1, 5, 5),
-Vertice(1, 3, 3),
-Vertice(5, 3, 4),
+    Vertice(3,4,3),
+    Vertice(4,5,2),
+    Vertice(4,6,2),
+    Vertice(2,3,3),
+    Vertice(5,6,5),
+    Vertice(3,5,4),
+    Vertice(1,2,7),
+    Vertice(1,3,8),
+    Vertice(2,5,6)
 ]
 
-encontrar_arvore_geradora_minima(arestas,6)
+encontrar_arvore_geradora_minima(arestas,9)
+
+# O código comentado é outro exemplo para encontrar a árvore geredora mínima
+
+#arestas = [
+#Vertice(0, 4, 4),
+#Vertice(0, 5, 7),
+#Vertice(2, 1, 8),
+#Vertice(2, 4, 6),
+#Vertice(4, 1, 7),
+#Vertice(1, 5, 5),
+#Vertice(1, 3, 3),
+#Vertice(5, 3, 4),
+#]
+
+#encontrar_arvore_geradora_minima(arestas,6)
     
     
 
